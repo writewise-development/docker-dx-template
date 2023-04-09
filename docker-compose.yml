@@ -1,0 +1,9 @@
+name: hello
+
+services:
+  hello-world:
+    build:
+      context: .
+      dockerfile: ./services/docker/hello.Dockerfile
+    container_name: hello-world
+    image: ${COMPOSE_PROJECT_NAME}/hello.world:localhost
